@@ -1,0 +1,947 @@
+.hero-section {
+    position: relative;
+    background-image: url('../img/14925739_rm309-adj-05.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+
+  .overlay-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .hero-content,
+  .hero-car {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Animations */
+  @keyframes slideFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .slide-left {
+    animation: slideFromLeft 1s ease-out forwards;
+  }
+
+  .slide-right {
+    animation: slideFromRight 1s ease-out forwards;
+  }
+
+  .hero-content {
+    max-width: 600px;
+    color: #000;
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 span {
+    color: #1d6611;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .get-report {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .get-report:hover {
+    background-color: #3a9440;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .hero-car {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-car img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .hero-section {
+      padding: 40px 60px;
+    }
+
+    .hero-content h1 {
+      font-size: 42px;
+    }
+
+    .hero-car img {
+      width: 450px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .hero-section {
+      padding: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+    }
+
+    .hero-car img {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      padding: 30px 20px;
+      min-height: auto;
+      text-align: center;
+    }
+
+    .hero-content {
+      margin: 0 auto;
+    }
+
+    .hero-content h1 {
+      font-size: 32px;
+    }
+
+    .get-report {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .hero-car {
+      margin-top: 30px;
+    }
+
+    .hero-car img {
+      width: 350px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 20px 15px;
+    }
+
+    .hero-content h1 {
+      font-size: 28px;
+    }
+
+    .hero-content p {
+      font-size: 14px;
+    }
+
+    .hero-car img {
+      width: 280px;
+    }
+  }
+
+
+  /* Two Column Section */
+
+  .two-column-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    min-height: 200px;
+    border-radius: 8px;
+  }
+
+  .h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .p {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .instant {
+    line-height: 1.8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .instant img {
+    width: 15px;
+    padding-right: 5px;
+  }
+
+  .Get {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #1d6611;
+  }
+
+  .right-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .h5 {
+    text-align: center;
+    margin: 25px 0 15px;
+    color: #333;
+  }
+
+  /* Responsive styles for two-column section */
+  @media (max-width: 992px) {
+    .two-column-container {
+      padding: 30px 15px;
+      gap: 20px;
+    }
+
+    .h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .two-column-container {
+      flex-direction: column;
+      padding: 20px 15px;
+    }
+
+    .left-column, .right-column {
+      flex: none;
+      width: 100%;
+      padding: 15px;
+    }
+
+    .h2 {
+      font-size: 22px;
+    }
+
+    .instant {
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .two-column-container {
+      padding: 15px 10px;
+    }
+
+    .h2 {
+      font-size: 20px;
+    }
+
+    .p {
+      font-size: 14px;
+    }
+
+    .instant, .Get {
+      font-size: 14px;
+    }
+  }
+
+
+  /* Choose a Plan */
+
+/* Headings */
+.heading {
+  color: rgb(54, 117, 49);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.chooseplan {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+/* Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2.5rem 5%;
+  justify-content: center;
+  
+}
+
+/* Card styling */
+.plan-card {
+  border: 2px solid rgb(29, 102, 17);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Badge */
+.badge {
+  font-size: 0.8rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  background-color: #1d6611;
+  color: white;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Card content */
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.display-4 {
+  font-weight: bold;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.report {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Features list */
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  
+}
+
+.list-unstyled li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Buy Button */
+.button{
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-weight: bold;
+  background-color: #28a745; 
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-md-4,
+  .col-sm-6,
+  .col-6 {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .row {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .display-4 {
+    font-size: 1.75rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .col-md-4 {
+    width: 45%;
+  }
+}
+  
+  
+
+  /* Choose a Plan */
+
+ /* Full Story */
+/* === Global Reset & Fonts === */
+
+
+
+.image img{
+  width: 40%;
+}
+
+/* === Section Wrapper === */
+.FullStory {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f4f8ff, #ffffff);
+}
+
+/* === Heading & Paragraph === */
+.Fullheading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+}
+
+.Fullpara{
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  padding-bottom: -5px;
+}
+
+
+.Fullpara2{
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  padding-bottom: -5px;
+}
+
+.REPORTCONTENTS{
+  padding-top: -15px;
+}
+
+
+/* === Feature Box Styling === */
+.feature-box {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid #eaeaea;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* === Feature Icon === */
+.feature-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* === Feature Title & Text === */
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.75rem;
+}
+
+.feature-text {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* === Button Wrapper === */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+/* === Stylish Button === */
+.btn-outline-green {
+  padding: 0.7rem 1.8rem;
+  border: 2px solid #28a745;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #28a745;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-outline-green:hover {
+  background-color: #28a745;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+}
+
+/* === Row Container for 3 Columns === */
+.feature-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem; /* spacing between boxes */
+}
+
+/* Each feature box takes 1/3rd width */
+.feature-box {
+  flex: 1 1 calc(33.333% - 2rem);
+}
+
+/* Responsive Layout for Screens smaller than 768px */
+@media (max-width: 768px) {
+  .feature-box {
+    flex: 1 1 calc(50% - 1rem); /* 2 columns for medium screens */
+  }
+
+  .Fullheading {
+    font-size: 1.8rem;
+  }
+
+  .feature-icon {
+    width: 50px;
+  }
+
+  .btn-outline-green {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+/* Responsive Layout for Screens smaller than 480px */
+@media (max-width: 480px) {
+  .feature-box {
+    flex: 1 1 100%; /* 1 column for small screens */
+  }
+
+  .Fullheading {
+    font-size: 1.6rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+
+  .feature-text {
+    font-size: 0.85rem;
+  }
+
+  .btn-outline-green {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design for Medium Screens (<992px) */
+@media (max-width: 992px) {
+  .Fullheading {
+    font-size: 2rem;
+  }
+
+  .feature-title {
+    font-size: 1.15rem;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Vehicle Data Tools Section */
+
+.imagetool {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  padding-top: 5px;
+}
+
+.imagetool:hover {
+  transform: translateY(-8px);
+}
+
+.imagetool img {
+  
+  margin-bottom: 15px;
+}
+
+.history2 {
+  padding-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.check {
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Comparison Table Section */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.main-content {
+  padding:  0;
+}
+
+.report-section {
+  margin-top: 30px;
+  /* background-color: #f9f9f9; */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.report-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+.vehicle-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+.imagetool {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.tool-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.history2 {
+  font-size: 22px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.check {
+  font-size: 16px;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.btn-outline-green {
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #1d6611;
+  background-color: transparent;
+  color: #1d6611;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-green:hover {
+  background-color: #1d6611;
+  color: white;
+}
+
+
+
+.imagetool {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  height: 100%; /* Ensures same height columns */
+}
+
+.vehicle-section .row {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping into multiple rows */
+  gap: 20px; /* Optional: adds spacing between columns */
+}
+
+@media (max-width: 991px) {
+  .vehicle-section .row {
+    flex-wrap: wrap; /* Allow wrap on small screens */
+  }
+}
+
+
+
+/* Table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: #1d6611;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.comparison-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.check {
+  font-size: 16px;
+}
+
+
+/* More specific selector */
+.cross {
+  color: red;
+  font-size: 20px;
+}
+
+
+
+/* Responsive styles for Vehicle Data Tools and Comparison Table */
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+
+  .history2 {
+    font-size: 22px;
+  }
+
+  .check {
+    font-size: 15px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .imagetool {
+    padding: 15px;
+  }
+
+  .history2 {
+    font-size: 20px;
+  }
+
+  .report-section {
+    padding: 15px;
+  }
+
+  .report-section h2 {
+    font-size: 20px;
+  }
+
+  .comparison-table {
+    font-size: 13px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 8px 5px;
+  }
+
+  .check, .cross {
+    font-size: 18px;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .history2 {
+    font-size: 18px;
+  }
+
+  .check {
+    font-size: 14px;
+  }
+
+  .report-section h2 {
+    font-size: 18px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+
+  .check, .cross {
+    font-size: 16px;
+  }
+}
+
+
+.h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+  padding-top: 10%;
+  font-family: "Lato";
+}
+
+
+/* footer */
+
+/* Footer.css */
+
+
+/* footer */

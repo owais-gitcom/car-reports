@@ -1,0 +1,180 @@
+.about-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    padding-top: 11%;
+    font-size: 25px;
+  }
+  
+  .about-container h2.about {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    padding-left: 45%;
+  }
+  
+  .breadcrumb {
+    text-align: right; /* ← Right align */
+  }
+  
+  .breadcrumb .Home {
+    font-size: 20px;
+    color: #777;
+    margin: 0;
+    padding-left: 45%;
+  }
+  
+  .breadcrumb .Home a {
+    color: rgb(40, 166, 69);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .breadcrumb .Home a:hover {
+    color: rgb(40, 166, 69);
+    text-decoration: underline;
+  }
+
+
+
+
+/* Headings */
+.heading {
+    color: rgb(54, 117, 49);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chooseplan {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  /* Layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2.5rem 5%;
+    justify-content: center;
+    
+  }
+  
+  /* Card styling */
+  .plan-card {
+    border: 2px solid rgb(29, 102, 17);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Badge */
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    background-color: #1d6611;
+    color: white;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Card content */
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .display-4 {
+    font-weight: bold;
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .report {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Features list */
+  .list-unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  /* Buy Button */
+  .button{
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: #28a745; 
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .col-md-4,
+    .col-sm-6,
+    .col-6 {
+      width: 100%;
+      flex: 0 0 100%;
+    }
+  
+    .row {
+      padding: 1.5rem 1rem;
+      gap: 1.5rem;
+    }
+  
+    .display-4 {
+      font-size: 1.75rem;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .col-md-4 {
+      width: 45%;
+    }
+  }
+    
+    
+  
+    /* Choose a Plan */

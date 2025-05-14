@@ -1,0 +1,105 @@
+.about-container {
+  padding: 100px 20px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about-container h2.about {
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.breadcrumb {
+  text-align: center;
+}
+
+.breadcrumb .Home {
+  font-size: clamp(14px, 3vw, 20px);
+  color: #777;
+  margin: 0;
+}
+
+.breadcrumb .Home a {
+  color: rgb(40, 166, 69);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb .Home a:hover {
+  color: rgb(40, 166, 69);
+  text-decoration: underline;
+}
+
+/* About Content */
+.about1 {
+  padding: 20px;
+}
+
+.about1 h5 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about1 p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about1 ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.about1 li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.aboutimage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.aboutimage img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* General Text Sections */
+.p, .p1 {
+  text-align: center;
+  padding: 15px 20px;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: clamp(24px, 5vw, 35px);
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+.about2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about2 ul {
+  padding-left: 20px;
+}
+
+.about2 li {
+  m
