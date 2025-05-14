@@ -58,6 +58,7 @@ const Home = () => {
     </div>
 
 
+
 <div className="two-column-container">
   <div className="left-column">
     <h2 className="h2 text-center">Quick Car Reports - Instant Vehicle History & Inspection Reports</h2>

@@ -21,6 +21,7 @@
   .hero-content,
   .hero-car {
     position: relative;
+    padding-top: 5%;
     z-index: 2;
   }
 
